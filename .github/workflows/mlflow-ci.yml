@@ -9,14 +9,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
+    - name: Checkout
       uses: actions/checkout@v3
 
     - name: Install dependencies
       run: |
         pip install mlflow pandas scikit-learn
 
-    - name: Run MLflow project
+    - name: Run MLflow Project
       run: |
         cd MLProject
         mlflow run . -P data_path=healthcare-dataset-stroke-data_preprocessing.csv
