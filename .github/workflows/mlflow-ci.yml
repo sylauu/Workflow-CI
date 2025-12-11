@@ -25,4 +25,4 @@ jobs:
     - name: Run MLflow Project
       run: |
         cd MLProject
-        mlflow run . -P data_path=healthcare-dataset-stroke-data_preprocessing.csv
+        mlflow run . --env-manager=local -P data_path=healthcare-dataset-stroke-data_preprocessing.csv
