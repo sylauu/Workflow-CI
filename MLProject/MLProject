@@ -1,6 +1,4 @@
-name: diabetes-workflow
-
-conda_env: conda.yaml
+name: stroke-workflow
 
 entry_points:
   main:
